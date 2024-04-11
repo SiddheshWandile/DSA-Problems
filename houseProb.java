@@ -8,15 +8,13 @@ public class houseProb {
     
         for(int i = 0; i < n; i++){
             int num = sc.nextInt();
-            map.put(num, map.getOrDefault(map, 0)+1);
+            map.put(num, map.getOrDefault(num, 0)+1);
         }
 
         for(int key : map.keySet()){
             if(key % 2 == 0){
                 System.out.println(map.get(key));
             }
-        }
-
-        
+        } 
     }
 }
